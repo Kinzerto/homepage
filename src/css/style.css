@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --background-black-: #111827;
+  --black: #121212;
+
+  --white: #f5f5f5;
+}
+
+body {
+  color: var(--black);
+  background-color: var(--white);
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.nav-wrapper,
+.header-wrapper {
+  padding-inline: 20px !important;
+}
+
+nav {
+  background-color: #111827;
+  color: var(--white);
+}
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.nav-wrapper .links {
+  display: flex;
+  gap: 15px;
+  font-weight: 500;
+}
+.nav-wrapper .logo {
+  font-weight: 900;
+  cursor: pointer;
+}
+.nav-wrapper .links a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--black);
+  font-size: small;
+  color: inherit;
+}
+
+mdi {
+  height: 100px;
+  width: 100px;
+}
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.288);
+  padding: 20px 0;
+}
+.header-wrapper .profile {
+  width: 70vw;
+  border-radius: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin-inline: auto;
+}
+.header-wrapper h1 {
+  padding-top: 20px;
+  font-style: italic;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+.header-wrapper p {
+  /* text-indent: 2rem; */
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+.header-wrapper .socials {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  gap: 10px;
+}
+.header-wrapper .socials img {
+  width: 28px;
+  cursor: pointer;
+}
