@@ -11,6 +11,7 @@ body {
   color: var(--black);
   background-color: var(--white);
   font-family: 'Inter', Arial, sans-serif;
+  position: relative;
 }
 
 .nav-wrapper,
@@ -27,12 +28,31 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  position: relative;
+}
+.nav-wrapper .menu {
+  cursor: pointer;
+  width: 20px;
 }
 .nav-wrapper .links {
   display: flex;
   gap: 15px;
   font-weight: 500;
+
+  position: absolute;
+  display: none;
+  background-color: var(--background-black-);
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  transform: translateY(100%);
 }
+.nav-wrapper .visible {
+  display: flex;
+}
+
 .nav-wrapper .logo {
   font-weight: 900;
   cursor: pointer;
