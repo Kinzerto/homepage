@@ -33,6 +33,12 @@ nav {
 .nav-wrapper .menu {
   cursor: pointer;
   width: 20px;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 .nav-wrapper .links {
   display: flex;
@@ -40,17 +46,35 @@ nav {
   font-weight: 500;
 
   position: absolute;
-  display: none;
   background-color: var(--background-black-);
   flex-direction: column;
   text-align: center;
-  width: 100%;
+
   left: 0;
   bottom: 0;
-  transform: translateY(100%);
+  width: 100%;
+
+  transform: translateY(100%) scaleY(0);
+  transform-origin: top;
+  transition: transform 300ms ease-in-out;
 }
-.nav-wrapper .visible {
-  display: flex;
+
+.nav-wrapper .links.visible {
+  transform: translateY(100%) scaleY(1);
+}
+
+@keyframes slide-menu {
+  0% {
+    transform: translateY(100%) scaleY(0);
+  }
+
+  70% {
+    transform: translateY(100%) scaleY(1.1);
+  }
+
+  100% {
+    transform: translateY(100%) scaleY(1);
+  }
 }
 
 .nav-wrapper .logo {
@@ -65,10 +89,6 @@ nav {
   color: inherit;
 }
 
-mdi {
-  height: 100px;
-  width: 100px;
-}
 header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.288);
   padding: 20px 0;
@@ -103,4 +123,10 @@ header {
 .header-wrapper .socials img {
   width: 28px;
   cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
