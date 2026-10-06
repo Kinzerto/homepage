@@ -13,7 +13,7 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/template.html',
-      favicon: './src/assets/images/k.png',
+      favicon: './src/assets/images/k.webp',
     }),
   ],
   output: {

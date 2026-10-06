@@ -13,6 +13,7 @@ export function renderCard(
     <img
       src="${imgSource}"
       alt="${altText}"
+      loading="lazy"
     />
 
     <div class="details">

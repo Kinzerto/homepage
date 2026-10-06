@@ -2,7 +2,7 @@ import './css/reset.css';
 import './css/style.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-import profile from './assets/images/profile-nobg.png';
+import profile from './assets/images/profile-nobg.webp';
 import facebook from './assets/images/facebook.svg';
 import github from './assets/images/github.svg';
 import linkedin from './assets/images/linkedin.svg';

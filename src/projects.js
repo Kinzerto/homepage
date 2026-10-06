@@ -1,9 +1,9 @@
-import battleship from './assets/images/projects-pictures/battleship.png';
-import weather from './assets/images/projects-pictures/weather.png';
-import todo from './assets/images/projects-pictures/todo.png';
-import restaurant from './assets/images/projects-pictures/restaurant.png';
-import tictactoe from './assets/images/projects-pictures/tictactoe.png';
-import homepage from './assets/images/projects-pictures/homepage.png';
+import battleship from './assets/images/projects-pictures/battleship.webp';
+import weather from './assets/images/projects-pictures/weather.webp';
+import todo from './assets/images/projects-pictures/todo.webp';
+import restaurant from './assets/images/projects-pictures/restaurant.webp';
+import tictactoe from './assets/images/projects-pictures/tictactoe.webp';
+import homepage from './assets/images/projects-pictures/homepage.webp';
 
 export const projects = [
   {
