@@ -145,8 +145,7 @@ section {
   padding-bottom: 40px;
   padding-top: 20px;
 }
-.projects-wrapper {
-}
+
 .projects-wrapper h2 {
   color: var(--black);
   text-align: center;
@@ -172,6 +171,7 @@ section {
 
   display: -webkit-box;
   -webkit-line-clamp: 4;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -193,6 +193,12 @@ section {
   /* border-radius: 20px; */
   background-color: #3b2926;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.03);
+  }
 }
 
 .card .icons {
@@ -244,8 +250,7 @@ footer {
 .footer-wrapper p {
   text-align: center;
 }
-.copyright {
-}
+
 .copyright p {
   padding: 10px;
   border-top: 2px solid rgba(245, 245, 245, 0.147);
@@ -334,8 +339,6 @@ footer {
   }
   .header-wrapper {
     justify-content: center;
-  }
-  .header-wrapper .profile {
   }
 
   .group-header-desc {
