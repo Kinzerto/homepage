@@ -183,7 +183,7 @@ section {
 }
 .card {
   width: 100%;
-  max-width: 500px;
+  max-width: 380px;
   /* border-radius: 5px; */
   display: flex;
   flex-direction: column;
@@ -193,10 +193,6 @@ section {
   /* border-radius: 20px; */
   background-color: #3b2926;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-.card img {
-  min-height: 200px;
-  max-height: 300px;
 }
 
 .card .icons {
@@ -322,6 +318,10 @@ footer {
 
   .portfolio {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card img {
+    height: 200px;
   }
 }
 
